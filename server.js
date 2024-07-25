@@ -1,6 +1,10 @@
 //import http from 'http';
 let http = require("http");
 let fs = require("fs")
+let {Buffer} = require ("buffer");
+buf = Buffer.from("hello");
+ console.log(buf);
+ console.log("starting server");
 
 http.createServer((req,res) => {
     fs.readFile("responsive.html", (err,data) => {
